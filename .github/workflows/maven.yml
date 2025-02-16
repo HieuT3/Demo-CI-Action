@@ -34,4 +34,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Call Render Hook
-      uses: curl ${{secrets.RENDER_HOOK}}
+      run: curl ${{secrets.RENDER_HOOK}}
