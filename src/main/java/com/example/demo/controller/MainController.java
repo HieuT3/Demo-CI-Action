@@ -19,6 +19,11 @@ public class MainController {
         return ResponseEntity.ok("Deploy Successfully!");
     }
 
+    @GetMapping("hook")
+    public ResponseEntity<String> testRenderHook() {
+        return ResponseEntity.ok("Test Render Hook");
+    }
+
     @GetMapping("/test")
     public ResponseEntity<String> test() {
         return ResponseEntity.ok("Test Deploy Spring boot");
