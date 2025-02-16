@@ -32,3 +32,6 @@ jobs:
         name: hieut3/spring-app
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Call Render Hook
+      uses: curl ${{secrets.RENDER_HOOK}}
